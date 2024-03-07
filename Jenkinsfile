@@ -10,7 +10,7 @@ pipeline {
         // }
         stage('Build') {
             steps {
-                build 'PES1UG21CS050-1'
+                build 'NonExistentJob'  // Intentionally using a nonexistent build job
                 sh 'g++ main.cpp -o output'
             }
         }
